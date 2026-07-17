@@ -1102,6 +1102,32 @@
       filter: brightness(0.62);
     }
 
+
+    .video-card.is-playing video {
+      z-index: 5;
+      filter: brightness(1);
+      transform: none;
+    }
+
+    .video-card.is-playing .video-overlay,
+    .video-card.is-playing .video-info,
+    .video-card.is-playing .video-play {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .hero-video-wrap.is-playing video {
+      filter: brightness(1);
+    }
+
+    .hero-video-wrap.is-playing .hero-play,
+    .hero-video-wrap.is-playing .hero-video-content {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
     .video-overlay {
       position: absolute;
       z-index: 2;
@@ -2303,8 +2329,8 @@
           <div class="hero-glow"></div>
           <div class="hero-phone">
             <div class="hero-video-wrap">
-              <video src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" muted autoplay loop playsinline preload="metadata"></video>
-              <button class="hero-play play-video" data-video="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" aria-label="Play demo video"><i class="fa-solid fa-play"></i></button>
+              <video id="heroVideo" src="lv_0_20260425180525 (1).mp4" playsinline preload="metadata"></video>
+              <button type="button" class="hero-play" id="heroPlay" aria-label="Play demo video"><i class="fa-solid fa-play"></i></button>
               <div class="hero-video-content">
                 <div class="hero-video-tag">Demo creative</div>
                 <h3>One product. One powerful UGC video.</h3>
@@ -2620,260 +2646,100 @@
           </h2>
 
           <p class="section-description">
-            These are temporary demo videos. Replace the video links with your
-            actual UGC work when your portfolio is ready.
+            Explore creator-led AI UGC videos designed for products, services
+            and performance-focused social media campaigns.
           </p>
 
         </div>
 
-        <div class="portfolio-controls reveal">
-          <button class="filter-button active" data-filter="all">
-            All Creatives
-          </button>
-
-          <button class="filter-button" data-filter="beauty">
-            Beauty
-          </button>
-
-          <button class="filter-button" data-filter="saas">
-            SaaS
-          </button>
-
-          <button class="filter-button" data-filter="ecommerce">
-            E-commerce
-          </button>
-
-          <button class="filter-button" data-filter="wellness">
-            Wellness
-          </button>
-        </div>
-
         <div class="video-grid">
 
-          <article
-            class="video-card reveal"
-            data-category="beauty"
-          >
-            <video
-              src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-              muted
-              loop
-              playsinline
-              preload="metadata"
-            ></video>
-
+          <article class="video-card reveal">
+            <video src="lv_0_20260410151906.mp4" muted playsinline preload="metadata"></video>
             <div class="video-overlay"></div>
-
-            <span class="video-category">
-              Beauty • Problem/Solution
-            </span>
-
-            <button
-              class="video-play play-video"
-              data-video="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-              aria-label="Play beauty demo"
-            >
+            <button type="button" class="video-play play-video" aria-label="Play product-focused AI UGC video">
               <i class="fa-solid fa-play"></i>
             </button>
-
             <div class="video-info">
-              <h3>
-                “I stopped spending thousands on complicated routines.”
-              </h3>
-
+              <h3></h3>
               <div class="video-meta">
-                <span>Direct-response concept</span>
-                <span>Demo</span>
+                <span></span>
+                <span>AI UGC</span>
               </div>
             </div>
           </article>
 
-          <article
-            class="video-card reveal"
-            data-category="saas"
-          >
-            <video
-              src="https://www.w3schools.com/html/mov_bbb.mp4"
-              muted
-              loop
-              playsinline
-              preload="metadata"
-            ></video>
-
+          <article class="video-card reveal">
+            <video src="lv_0_20260428044439.mp4" muted playsinline preload="metadata"></video>
             <div class="video-overlay"></div>
-
-            <span class="video-category">
-              SaaS • Founder Style
-            </span>
-
-            <button
-              class="video-play play-video"
-              data-video="https://www.w3schools.com/html/mov_bbb.mp4"
-              aria-label="Play SaaS demo"
-            >
+            <button type="button" class="video-play play-video" aria-label="Play founder-style AI UGC video">
               <i class="fa-solid fa-play"></i>
             </button>
-
             <div class="video-info">
-              <h3>
-                “Founders waste months building features nobody asked for.”
-              </h3>
-
+              <h3></h3>
               <div class="video-meta">
-                <span>Authority hook</span>
-                <span>Demo</span>
+                <span></span>
+                <span>AI UGC</span>
               </div>
             </div>
           </article>
 
-          <article
-            class="video-card reveal"
-            data-category="ecommerce"
-          >
-            <video
-              src="https://media.w3.org/2010/05/sintel/trailer.mp4"
-              muted
-              loop
-              playsinline
-              preload="metadata"
-            ></video>
-
+          <article class="video-card reveal">
+            <video src="lv_0_20260428113910-1.mp4" muted playsinline preload="metadata"></video>
             <div class="video-overlay"></div>
-
-            <span class="video-category">
-              E-commerce • Product Demo
-            </span>
-
-            <button
-              class="video-play play-video"
-              data-video="https://media.w3.org/2010/05/sintel/trailer.mp4"
-              aria-label="Play ecommerce demo"
-            >
+            <button type="button" class="video-play play-video" aria-label="Play service promotion AI UGC video">
               <i class="fa-solid fa-play"></i>
             </button>
-
             <div class="video-info">
-              <h3>
-                “This is the one product I did not expect to use daily.”
-              </h3>
-
+              <h3></h3>
               <div class="video-meta">
-                <span>Curiosity hook</span>
-                <span>Demo</span>
+                <span></span>
+                <span>AI UGC</span>
               </div>
             </div>
           </article>
 
-          <article
-            class="video-card reveal"
-            data-category="wellness"
-          >
-            <video
-              src="https://media.w3.org/2010/05/bunny/trailer.mp4"
-              muted
-              loop
-              playsinline
-              preload="metadata"
-            ></video>
-
+          <article class="video-card reveal">
+            <video src="lv_0_20260501144503.mp4" muted playsinline preload="metadata"></video>
             <div class="video-overlay"></div>
-
-            <span class="video-category">
-              Wellness • Testimonial
-            </span>
-
-            <button
-              class="video-play play-video"
-              data-video="https://media.w3.org/2010/05/bunny/trailer.mp4"
-              aria-label="Play wellness demo"
-            >
+            <button type="button" class="video-play play-video" aria-label="Play testimonial-style AI UGC video">
               <i class="fa-solid fa-play"></i>
             </button>
-
             <div class="video-info">
-              <h3>
-                “After seven days, I finally understood the hype.”
-              </h3>
-
+              <h3></h3>
               <div class="video-meta">
-                <span>Social-proof concept</span>
-                <span>Demo</span>
+                <span></span>
+                <span>AI UGC</span>
               </div>
             </div>
           </article>
 
-          <article
-            class="video-card reveal"
-            data-category="beauty"
-          >
-            <video
-              src="https://media.w3.org/2010/05/video/movie_300.mp4"
-              muted
-              loop
-              playsinline
-              preload="metadata"
-            ></video>
-
+          <article class="video-card reveal">
+            <video src="lv_0_20260507175016.mp4" muted playsinline preload="metadata"></video>
             <div class="video-overlay"></div>
-
-            <span class="video-category">
-              Beauty • Routine Video
-            </span>
-
-            <button
-              class="video-play play-video"
-              data-video="https://media.w3.org/2010/05/video/movie_300.mp4"
-              aria-label="Play routine demo"
-            >
+            <button type="button" class="video-play play-video" aria-label="Play performance marketing AI UGC video">
               <i class="fa-solid fa-play"></i>
             </button>
-
             <div class="video-info">
-              <h3>
-                “My three-minute morning routine changed completely.”
-              </h3>
-
+              <h3></h3>
               <div class="video-meta">
-                <span>Lifestyle concept</span>
-                <span>Demo</span>
+                <span></span>
+                <span>AI UGC</span>
               </div>
             </div>
           </article>
 
-          <article
-            class="video-card reveal"
-            data-category="saas"
-          >
-            <video
-              src="https://www.w3schools.com/html/movie.mp4"
-              muted
-              loop
-              playsinline
-              preload="metadata"
-            ></video>
-
+          <article class="video-card reveal">
+            <video src="lv_0_20260508132922.mp4" muted playsinline preload="metadata"></video>
             <div class="video-overlay"></div>
-
-            <span class="video-category">
-              SaaS • Screen Demo
-            </span>
-
-            <button
-              class="video-play play-video"
-              data-video="https://www.w3schools.com/html/movie.mp4"
-              aria-label="Play screen demo"
-            >
+            <button type="button" class="video-play play-video" aria-label="Play brand awareness AI UGC video">
               <i class="fa-solid fa-play"></i>
             </button>
-
             <div class="video-info">
-              <h3>
-                “This tool replaced three different apps in my workflow.”
-              </h3>
-
+              <h3></h3>
               <div class="video-meta">
-                <span>Product-led concept</span>
-                <span>Demo</span>
+                <span></span>
+                <span>AI UGC</span>
               </div>
             </div>
           </article>
@@ -3571,31 +3437,6 @@
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <!-- Video Modal -->
-
-  <div class="video-modal" id="videoModal">
-
-    <div class="modal-box">
-
-      <button
-        class="modal-close"
-        id="modalClose"
-        aria-label="Close video"
-      >
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-
-      <video
-        class="modal-video"
-        id="modalVideo"
-        controls
-        playsinline
-      ></video>
-
-    </div>
-
-  </div>
-
   <script>
     document.documentElement.classList.add("js-ready");
 
@@ -3629,93 +3470,65 @@
     const filterButtons = document.querySelectorAll(".filter-button");
     const videoCards = document.querySelectorAll(".video-card");
 
-    filterButtons.forEach(function (button) {
-      button.addEventListener("click", function () {
-        filterButtons.forEach(function (item) {
-          item.classList.remove("active");
-        });
-
-        button.classList.add("active");
-
-        const selectedCategory = button.dataset.filter;
-
-        videoCards.forEach(function (card) {
-          const cardCategory = card.dataset.category;
-
-          if (
-            selectedCategory === "all" ||
-            cardCategory === selectedCategory
-          ) {
-            card.classList.remove("hidden");
-          } else {
-            card.classList.add("hidden");
-          }
-        });
-      });
-    });
-
-    // Portfolio Video Hover
-
+    // Play portfolio videos inside their own cards
     videoCards.forEach(function (card) {
       const video = card.querySelector("video");
+      const playButton = card.querySelector(".play-video");
 
-      card.addEventListener("mouseenter", function () {
+      playButton.addEventListener("click", function () {
+        videoCards.forEach(function (otherCard) {
+          if (otherCard !== card) {
+            const otherVideo = otherCard.querySelector("video");
+            otherVideo.pause();
+            otherCard.classList.remove("is-playing");
+          }
+        });
+
+        card.classList.add("is-playing");
+        video.muted = false;
+        video.controls = true;
         video.play().catch(function () {
-          console.log("Video preview could not autoplay.");
+          video.controls = true;
         });
       });
 
-      card.addEventListener("mouseleave", function () {
-        video.pause();
+      video.addEventListener("pause", function () {
+        if (!video.ended) {
+          card.classList.remove("is-playing");
+        }
+      });
+
+      video.addEventListener("ended", function () {
+        card.classList.remove("is-playing");
+        video.controls = false;
         video.currentTime = 0;
       });
     });
 
-    // Video Modal
+    // Play the hero video inside the phone itself
+    const heroVideoWrap = document.querySelector(".hero-video-wrap");
+    const heroVideo = heroVideoWrap.querySelector("video");
+    const heroPlayButton = heroVideoWrap.querySelector(".hero-play");
 
-    const videoModal = document.getElementById("videoModal");
-    const modalVideo = document.getElementById("modalVideo");
-    const modalClose = document.getElementById("modalClose");
-    const videoButtons = document.querySelectorAll(".play-video");
-
-    videoButtons.forEach(function (button) {
-      button.addEventListener("click", function () {
-        const videoSource = button.dataset.video;
-
-        modalVideo.src = videoSource;
-        videoModal.classList.add("active");
-        document.body.classList.add("no-scroll");
-
-        modalVideo.play().catch(function () {
-          console.log("Press play to start the video.");
-        });
+    heroPlayButton.addEventListener("click", function () {
+      heroVideoWrap.classList.add("is-playing");
+      heroVideo.muted = false;
+      heroVideo.controls = true;
+      heroVideo.play().catch(function () {
+        heroVideo.controls = true;
       });
     });
 
-    function closeVideoModal() {
-      videoModal.classList.remove("active");
-      document.body.classList.remove("no-scroll");
-
-      modalVideo.pause();
-      modalVideo.removeAttribute("src");
-      modalVideo.load();
-    }
-
-    modalClose.addEventListener("click", closeVideoModal);
-
-    videoModal.addEventListener("click", function (event) {
-      if (event.target === videoModal) {
-        closeVideoModal();
+    heroVideo.addEventListener("pause", function () {
+      if (!heroVideo.ended) {
+        heroVideoWrap.classList.remove("is-playing");
       }
     });
 
-    document.addEventListener("keydown", function (event) {
-      if (
-        event.key === "Escape" &&
-        videoModal.classList.contains("active")
-      ) {
-        closeVideoModal();
-      }
+    heroVideo.addEventListener("ended", function () {
+      heroVideoWrap.classList.remove("is-playing");
+      heroVideo.controls = false;
+      heroVideo.currentTime = 0;
     });
 
     // FAQ
