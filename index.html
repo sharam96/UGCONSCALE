@@ -2563,6 +2563,51 @@
       }
     }
 
+  
+    /* Faster and smoother moving video strip */
+    .creator-strip-track {
+      transform: translate3d(0, 0, 0);
+      will-change: transform;
+      backface-visibility: hidden;
+    }
+
+    .creator-video-strip .moving-video-card,
+    .creator-video-strip .moving-video-card video {
+      transform: translateZ(0);
+      backface-visibility: hidden;
+    }
+
+    .creator-video-strip .moving-video-card video {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+  
+    /* Smooth hero strip playback and movement */
+    .creator-video-strip {
+      contain: layout paint style;
+    }
+
+    .creator-strip-track {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+    }
+
+    .creator-video-strip .moving-video-card {
+      contain: layout paint;
+      overflow: hidden;
+      backface-visibility: hidden;
+    }
+
+    .creator-video-strip .moving-video-card video {
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      image-rendering: auto;
+    }
+
   </style>
 </head>
 
@@ -2660,9 +2705,9 @@
       </div>
       <div class="creator-video-strip" aria-label="Continuously moving UGC video samples">
         <div class="creator-strip-track" id="creatorStripTrack">
-          <article class="moving-video-card">
+<article class="moving-video-card">
             <video
-              src="https://res.cloudinary.com/y0edxko4/video/upload/v1784306131/lv_0_20260425180525_1_fllzdz.mp4"
+              src="https://res.cloudinary.com/y0edxko4/video/upload/f_auto,q_auto:eco,w_360/v1784305202/lv_0_20260410151906_o3ezio.mp4"
               autoplay
               muted
               loop
@@ -2670,12 +2715,13 @@
               webkit-playsinline
               preload="auto"
               disablepictureinpicture
+              controlslist="nodownload noplaybackrate nofullscreen"
               aria-hidden="true"
             ></video>
           </article>
-          <article class="moving-video-card">
+<article class="moving-video-card">
             <video
-              src="https://res.cloudinary.com/y0edxko4/video/upload/v1784305624/lv_0_20260428044439_ba3i1l.mp4"
+              src="https://res.cloudinary.com/y0edxko4/video/upload/f_auto,q_auto:eco,w_360/v1784305624/lv_0_20260428044439_ba3i1l.mp4"
               autoplay
               muted
               loop
@@ -2683,12 +2729,13 @@
               webkit-playsinline
               preload="auto"
               disablepictureinpicture
+              controlslist="nodownload noplaybackrate nofullscreen"
               aria-hidden="true"
             ></video>
           </article>
-          <article class="moving-video-card">
+<article class="moving-video-card">
             <video
-              src="https://res.cloudinary.com/y0edxko4/video/upload/v1784305696/lv_0_20260428113910-1_njha4c.mp4"
+              src="https://res.cloudinary.com/y0edxko4/video/upload/f_auto,q_auto:eco,w_360/v1784305696/lv_0_20260428113910-1_njha4c.mp4"
               autoplay
               muted
               loop
@@ -2696,12 +2743,13 @@
               webkit-playsinline
               preload="auto"
               disablepictureinpicture
+              controlslist="nodownload noplaybackrate nofullscreen"
               aria-hidden="true"
             ></video>
           </article>
-          <article class="moving-video-card">
+<article class="moving-video-card">
             <video
-              src="https://res.cloudinary.com/y0edxko4/video/upload/v1784305762/lv_0_20260501144503_uzfibf.mp4"
+              src="https://res.cloudinary.com/y0edxko4/video/upload/f_auto,q_auto:eco,w_360/v1784305762/lv_0_20260501144503_uzfibf.mp4"
               autoplay
               muted
               loop
@@ -2709,12 +2757,13 @@
               webkit-playsinline
               preload="auto"
               disablepictureinpicture
+              controlslist="nodownload noplaybackrate nofullscreen"
               aria-hidden="true"
             ></video>
           </article>
-          <article class="moving-video-card">
+<article class="moving-video-card">
             <video
-              src="https://res.cloudinary.com/y0edxko4/video/upload/v1784305859/lv_0_20260507175016_tdnenp.mp4"
+              src="https://res.cloudinary.com/y0edxko4/video/upload/f_auto,q_auto:eco,w_360/v1784305859/lv_0_20260507175016_tdnenp.mp4"
               autoplay
               muted
               loop
@@ -2722,12 +2771,13 @@
               webkit-playsinline
               preload="auto"
               disablepictureinpicture
+              controlslist="nodownload noplaybackrate nofullscreen"
               aria-hidden="true"
             ></video>
           </article>
-          <article class="moving-video-card">
+<article class="moving-video-card">
             <video
-              src="https://res.cloudinary.com/y0edxko4/video/upload/v1784306012/lv_0_20260508132922_dk17ko.mp4"
+              src="https://res.cloudinary.com/y0edxko4/video/upload/f_auto,q_auto:eco,w_360/v1784306012/lv_0_20260508132922_dk17ko.mp4"
               autoplay
               muted
               loop
@@ -2735,12 +2785,13 @@
               webkit-playsinline
               preload="auto"
               disablepictureinpicture
+              controlslist="nodownload noplaybackrate nofullscreen"
               aria-hidden="true"
             ></video>
           </article>
-          <article class="moving-video-card">
+<article class="moving-video-card">
             <video
-              src="https://res.cloudinary.com/y0edxko4/video/upload/v1784306131/lv_0_20260425180525_1_fllzdz.mp4"
+              src="https://res.cloudinary.com/y0edxko4/video/upload/f_auto,q_auto:eco,w_360/v1784306131/lv_0_20260425180525_1_fllzdz.mp4"
               autoplay
               muted
               loop
@@ -2748,12 +2799,13 @@
               webkit-playsinline
               preload="auto"
               disablepictureinpicture
+              controlslist="nodownload noplaybackrate nofullscreen"
               aria-hidden="true"
             ></video>
           </article>
-          <article class="moving-video-card">
+<article class="moving-video-card">
             <video
-              src="https://res.cloudinary.com/y0edxko4/video/upload/v1784305202/lv_0_20260410151906_o3ezio.mp4"
+              src="https://res.cloudinary.com/y0edxko4/video/upload/f_auto,q_auto:eco,w_360/v1784305202/lv_0_20260410151906_o3ezio.mp4"
               autoplay
               muted
               loop
@@ -2761,12 +2813,13 @@
               webkit-playsinline
               preload="auto"
               disablepictureinpicture
+              controlslist="nodownload noplaybackrate nofullscreen"
               aria-hidden="true"
             ></video>
           </article>
-          <article class="moving-video-card">
+<article class="moving-video-card">
             <video
-              src="https://res.cloudinary.com/y0edxko4/video/upload/v1784305624/lv_0_20260428044439_ba3i1l.mp4"
+              src="https://res.cloudinary.com/y0edxko4/video/upload/f_auto,q_auto:eco,w_360/v1784305624/lv_0_20260428044439_ba3i1l.mp4"
               autoplay
               muted
               loop
@@ -2774,12 +2827,13 @@
               webkit-playsinline
               preload="auto"
               disablepictureinpicture
+              controlslist="nodownload noplaybackrate nofullscreen"
               aria-hidden="true"
             ></video>
           </article>
-          <article class="moving-video-card">
+<article class="moving-video-card">
             <video
-              src="https://res.cloudinary.com/y0edxko4/video/upload/v1784305696/lv_0_20260428113910-1_njha4c.mp4"
+              src="https://res.cloudinary.com/y0edxko4/video/upload/f_auto,q_auto:eco,w_360/v1784305696/lv_0_20260428113910-1_njha4c.mp4"
               autoplay
               muted
               loop
@@ -2787,12 +2841,13 @@
               webkit-playsinline
               preload="auto"
               disablepictureinpicture
+              controlslist="nodownload noplaybackrate nofullscreen"
               aria-hidden="true"
             ></video>
           </article>
-          <article class="moving-video-card">
+<article class="moving-video-card">
             <video
-              src="https://res.cloudinary.com/y0edxko4/video/upload/v1784305762/lv_0_20260501144503_uzfibf.mp4"
+              src="https://res.cloudinary.com/y0edxko4/video/upload/f_auto,q_auto:eco,w_360/v1784305762/lv_0_20260501144503_uzfibf.mp4"
               autoplay
               muted
               loop
@@ -2800,12 +2855,13 @@
               webkit-playsinline
               preload="auto"
               disablepictureinpicture
+              controlslist="nodownload noplaybackrate nofullscreen"
               aria-hidden="true"
             ></video>
           </article>
-          <article class="moving-video-card">
+<article class="moving-video-card">
             <video
-              src="https://res.cloudinary.com/y0edxko4/video/upload/v1784305859/lv_0_20260507175016_tdnenp.mp4"
+              src="https://res.cloudinary.com/y0edxko4/video/upload/f_auto,q_auto:eco,w_360/v1784305859/lv_0_20260507175016_tdnenp.mp4"
               autoplay
               muted
               loop
@@ -2813,12 +2869,13 @@
               webkit-playsinline
               preload="auto"
               disablepictureinpicture
+              controlslist="nodownload noplaybackrate nofullscreen"
               aria-hidden="true"
             ></video>
           </article>
-          <article class="moving-video-card">
+<article class="moving-video-card">
             <video
-              src="https://res.cloudinary.com/y0edxko4/video/upload/v1784306012/lv_0_20260508132922_dk17ko.mp4"
+              src="https://res.cloudinary.com/y0edxko4/video/upload/f_auto,q_auto:eco,w_360/v1784306012/lv_0_20260508132922_dk17ko.mp4"
               autoplay
               muted
               loop
@@ -2826,12 +2883,13 @@
               webkit-playsinline
               preload="auto"
               disablepictureinpicture
+              controlslist="nodownload noplaybackrate nofullscreen"
               aria-hidden="true"
             ></video>
           </article>
-          <article class="moving-video-card">
+<article class="moving-video-card">
             <video
-              src="https://res.cloudinary.com/y0edxko4/video/upload/v1784306131/lv_0_20260425180525_1_fllzdz.mp4"
+              src="https://res.cloudinary.com/y0edxko4/video/upload/f_auto,q_auto:eco,w_360/v1784306131/lv_0_20260425180525_1_fllzdz.mp4"
               autoplay
               muted
               loop
@@ -2839,6 +2897,7 @@
               webkit-playsinline
               preload="auto"
               disablepictureinpicture
+              controlslist="nodownload noplaybackrate nofullscreen"
               aria-hidden="true"
             ></video>
           </article>
@@ -3996,71 +4055,92 @@
     });
 
     // CreatorFlo-style moving strip:
-    // real videos only, permanently muted, no poster images, no animation reset.
+    // Real videos only, permanently muted and continuously moving.
     const creatorStrip = document.querySelector(".creator-video-strip");
     const creatorTrack = document.getElementById("creatorStripTrack");
-    const movingVideos = creatorTrack
-      ? creatorTrack.querySelectorAll("video")
-      : [];
 
-    movingVideos.forEach(function (video) {
+    function forceMutedAutoplay(video, delay = 0) {
       video.muted = true;
       video.defaultMuted = true;
       video.volume = 0;
       video.loop = true;
+      video.autoplay = true;
       video.playsInline = true;
+      video.playbackRate = 1.08;
+      video.defaultPlaybackRate = 1.08;
+
       video.removeAttribute("poster");
       video.setAttribute("muted", "");
       video.setAttribute("autoplay", "");
+      video.setAttribute("loop", "");
       video.setAttribute("playsinline", "");
       video.setAttribute("webkit-playsinline", "");
       video.setAttribute("preload", "auto");
 
-      const keepPlaying = function () {
+      const startVideo = function () {
         video.muted = true;
         video.volume = 0;
+        video.playbackRate = 1.08;
 
-        const playPromise = video.play();
-        if (playPromise && typeof playPromise.catch === "function") {
-          playPromise.catch(function () {});
+        const promise = video.play();
+        if (promise && typeof promise.catch === "function") {
+          promise.catch(function () {});
         }
       };
 
-      video.addEventListener("loadeddata", keepPlaying);
-      video.addEventListener("canplay", keepPlaying);
-      video.addEventListener("pause", function () {
-        if (!document.hidden) keepPlaying();
-      });
-      video.addEventListener("volumechange", function () {
-        video.muted = true;
-        video.volume = 0;
-      });
+      if (video.dataset.smoothVideoReady !== "true") {
+        video.dataset.smoothVideoReady = "true";
 
-      keepPlaying();
-    });
+        video.addEventListener("loadedmetadata", startVideo, { passive: true });
+        video.addEventListener("canplay", startVideo, { passive: true });
+        video.addEventListener("pause", function () {
+          if (!document.hidden) {
+            window.setTimeout(startVideo, 120);
+          }
+        });
+        video.addEventListener("volumechange", function () {
+          video.muted = true;
+          video.volume = 0;
+        });
+      }
+
+      window.setTimeout(startVideo, delay);
+    }
 
     if (creatorStrip && creatorTrack) {
+      const movingVideos = Array.from(
+        creatorTrack.querySelectorAll(".moving-video-card video")
+      );
+
+      movingVideos.forEach(function (video, index) {
+        forceMutedAutoplay(video, index * 90);
+      });
+
       let offset = 0;
       let previousTime = performance.now();
       let animationFrame = 0;
-      let speed = window.innerWidth <= 700 ? 34 : 42;
+      let speed = window.innerWidth <= 700 ? 66 : 88;
+      let cachedGap = 14;
 
-      const getGap = function () {
+      const updateMeasurements = function () {
         const style = window.getComputedStyle(creatorTrack);
-        return parseFloat(style.columnGap || style.gap) || 0;
+        cachedGap = parseFloat(style.columnGap || style.gap) || 0;
+        speed = window.innerWidth <= 700 ? 66 : 88;
       };
 
       const animateCreatorStrip = function (time) {
-        const delta = Math.min((time - previousTime) / 1000, 0.05);
+        const delta = Math.min((time - previousTime) / 1000, 0.035);
         previousTime = time;
         offset -= speed * delta;
 
         let firstCard = creatorTrack.firstElementChild;
 
         while (firstCard) {
-          const cardWidth = firstCard.getBoundingClientRect().width + getGap();
+          const cardWidth = firstCard.offsetWidth + cachedGap;
 
-          if (-offset < cardWidth) break;
+          if (-offset < cardWidth) {
+            break;
+          }
 
           offset += cardWidth;
           creatorTrack.appendChild(firstCard);
@@ -4070,36 +4150,42 @@
         creatorTrack.style.transform =
           "translate3d(" + offset.toFixed(2) + "px, 0, 0)";
 
-        animationFrame = requestAnimationFrame(animateCreatorStrip);
+        animationFrame = window.requestAnimationFrame(animateCreatorStrip);
       };
 
-      const resumeVideos = function () {
-        movingVideos.forEach(function (video) {
+      const resumeAllMovingVideos = function () {
+        creatorTrack.querySelectorAll("video").forEach(function (video, index) {
           video.muted = true;
           video.volume = 0;
-          video.play().catch(function () {});
+          video.playbackRate = 1.08;
+
+          window.setTimeout(function () {
+            video.play().catch(function () {});
+          }, index * 60);
         });
       };
 
-      window.addEventListener("resize", function () {
-        speed = window.innerWidth <= 700 ? 34 : 42;
-      }, { passive: true });
+      updateMeasurements();
+
+      window.addEventListener("resize", updateMeasurements, { passive: true });
 
       document.addEventListener("visibilitychange", function () {
         previousTime = performance.now();
 
         if (!document.hidden) {
-          resumeVideos();
+          resumeAllMovingVideos();
         }
       });
 
-      creatorStrip.addEventListener("mouseenter", resumeVideos);
-      creatorStrip.addEventListener("touchstart", resumeVideos, { passive: true });
+      window.addEventListener("pageshow", resumeAllMovingVideos);
+      creatorStrip.addEventListener("touchstart", resumeAllMovingVideos, {
+        passive: true
+      });
 
-      animationFrame = requestAnimationFrame(animateCreatorStrip);
+      animationFrame = window.requestAnimationFrame(animateCreatorStrip);
 
       window.addEventListener("pagehide", function () {
-        cancelAnimationFrame(animationFrame);
+        window.cancelAnimationFrame(animationFrame);
       }, { once: true });
     }
 
